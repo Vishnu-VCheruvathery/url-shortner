@@ -28,7 +28,7 @@ app.get('/:shortId', async(req,res) => {
         res.status(400).json({message: 'no redirect url'});
      }
 
-     return res.status(200).json(entry.redirectURL);
+     return res.redirect(entry.redirectURL);
 })
 
 
